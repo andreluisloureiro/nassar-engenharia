@@ -1,0 +1,679 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #030614;
+    overflow-x: hidden;
+}
+
+:root {
+    --fundo-height: 100%;
+}
+
+.title {
+    flex-grow: 1;
+    display: flex;
+    justify-content: left;
+}
+
+.coresFundo {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-size: 125% 125%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 0;
+    background: linear-gradient(45deg, #051962 25%, transparent 25%), linear-gradient(315deg, #051962 25%, transparent 25%), linear-gradient(45deg, transparent 24%, #081b63 25%, #081b63 45%, transparent 45%), linear-gradient(315deg, transparent 24%, #081b63 25%, #081b63 45%, transparent 45%);
+    background-size: 6em 6em;
+    background-color: #051962;
+    opacity: 1
+}
+
+.controleNav {
+    transition: 500ms;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    z-index: +1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+}
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    margin: 0px;
+    background-image: linear-gradient(-45deg, #051962 0%, #041658 25%, #0a2791 51%, #051962 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: +1;
+    opacity: 100%;
+    transition: 400ms;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nav.header {
+    height: 7vh;
+}
+
+.menuOption {
+    margin: 10px;
+}
+
+.textoNav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    font-family: 'Smooch Sans', bold;
+    color: white;
+    font-size: 40px;
+    margin-left: 35px;
+}
+
+.divimagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+p, h1 {
+    font-family: 'Smooch Sans', bold;
+}
+
+a {
+    display: flex;
+    font-family: 'Smooch Sans', bold;
+    color: white;
+    font-size: 4vh;
+    text-decoration: none;
+    text-align: center;
+}
+
+.tudo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.imagem1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    position: absolute;
+    background-color: transparent;
+    transition: 500ms;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: 0ms;
+    transform: translateX(0vw);
+}
+
+.imagem2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    position: absolute;
+    background-color: transparent;
+    transition: 500ms;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: 3000ms;
+    transform: translateX(0vw);
+}   
+
+.imagem3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    position: absolute;
+    background-color: transparent;
+    transition: 500ms;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: 3000ms;
+    transform: translateX(0vw);
+}
+
+
+.imagens.move {
+    transform: translateX(-100vw);
+}
+
+.containerX {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    transform: translateY(0vh);
+}
+
+.containerX2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    transform: translateY(0vh);
+}
+
+.arrowDiv {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 10vw;
+    filter: invert(100%) sepia(55%) saturate(2%) hue-rotate(112deg) brightness(108%) contrast(101%);
+}
+
+.reveal.active {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 100%;
+}
+
+.section {
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.divTitulo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0%;
+    top: 20px;
+    margin-bottom: 5vw;
+    transition: 400ms ease-in-out;
+}
+
+.tituloDescricao {
+    color: white;
+    font-family: 'Smooch Sans', bold;
+    font-size: 5vw;
+    margin: 0px;
+}
+
+
+
+.containerSobreMim {
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.divFoto {
+    color: white;
+}
+
+.containerFoto {
+    position: relative;
+    height: 20vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0%;
+    top: 10vw;
+    transition: 500ms;
+}
+
+.imagemDescricao {
+    position: relative;
+    height: 20vw;
+    border-radius: 2vh;
+    transition: 500ms;
+}
+
+.legenda {
+    position: relative;
+    color: white;
+    display: flex;
+    font-size: 1.5vw;
+    margin: 0px;
+}
+
+.textoDescricao {
+    position: relative;
+    font-family: 'Smooch Sans', bold;
+    font-size: 2.2vw;
+    max-width: 52vw;
+    color: white;
+    width: 150vw;
+    left: 100px;
+    transition: 500ms ease-in-out;
+    opacity: 0%;
+    margin: 0px;
+}
+
+
+.divTituloProjetos {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0%;
+    top: 20px;
+    margin-bottom: 5vw;
+    transition: 400ms ease-in-out;
+}
+
+.divEmail {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.textoEmail {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    font-family: 'Smooch Sans', bold;
+    color: white;
+    font-size: 30px;
+    margin-right: 35px;
+}
+
+.aEmail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Smooch Sans', bold;
+    color: white;
+    font-size: max(26px, 3px);
+    text-decoration: none;
+    transition: 500ms;
+    text-align: center;
+}
+
+.projetos {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.projeto1 {
+    position: relative;
+    top: 10px;
+    transition: 1200ms;
+    opacity: 0%;
+}
+
+
+.projeto2 {
+    position: relative;
+    top: 10px;
+    transition: 1200ms;
+    opacity: 0%;
+}
+
+.imagemProjeto1 {
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    position: relative;
+    border-radius: 2%;
+    background-color: transparent;
+    transition: 500ms;
+}
+
+.textoProjeto1 {
+    font-family: 'Smooch Sans', bold;
+    color: white;
+    font-size: max(26px, 3px);
+    margin: 0px;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vw;
+    width: 50vw;
+    background-color: white;
+    z-index: +1;
+}
+
+#loadOverlay {
+    display: none;
+}
+
+.sectionContato {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 65vh;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    background-color: #f1f1f1;
+}
+
+
+.containerContato {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.containerInfoContato {
+    position: relative;
+    justify-content: space-around;
+    align-items:flex-start;
+    flex-direction: column;
+    top: 3vh;
+    height: 25vw;
+    width: 32vw;
+    display: flex;
+    opacity: 0%;
+    transition: 500ms;
+}
+
+.containerFotoContato {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    top: 3vh;
+    height: 25vw;
+    width: 30vw;
+    display: flex;
+    opacity: 0%;
+    transition: 500ms;
+}
+
+.imagemContato {
+    position: relative;
+    object-fit: cover;
+    height: 20vw;
+    width: 30vw;
+    border-radius: 2vh;
+    transition: 500ms;
+}
+
+.contatoTitulo {
+    margin: 0px;
+    font-size: 3vw;
+}
+
+.textoDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.logoTexto {
+    height: 1.5vw;
+    margin-right: 0.7vw;
+}
+
+.contatoTexto {
+    margin: 0px;
+    font-size: 1.5vw;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10vw;
+}
+
+.logo {
+    position: relative;
+    height: 2vw;
+    transition: 500ms;
+    border-radius: 100%;
+}
+
+
+
+
+
+@media (max-width : 700px) {
+    :root {
+        --containner-height: 85vh;
+        --containner-width: 70%;
+        --fotos-heightWidth: 35vw;
+        --text-fontSize: 5.5vw;
+    }
+
+    .aEmail {
+        display: none;
+    }
+
+    .containergeral {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #03081c;
+        height: var(--containner-height);
+        width: var(--containner-width);
+        flex-direction: column;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        border-radius: 3vw;
+    }
+
+    .textoCodePen {
+        font-size: var(--text-fontSize);
+    }
+
+    .textoBehance {
+        font-size: var(--text-fontSize);
+    }
+
+
+    .textoLinkedin {
+        font-size: var(--text-fontSize);
+    }
+
+    .nav {
+        height: 18vw;
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .nav.header {
+        height: 12vw;
+    }
+
+    .textoNav {
+
+        font-size: 13vw;
+        margin-left: 0px;
+
+    }
+
+    .tudo {
+        height: 95vh;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 0px;
+
+    }
+
+    .imagemDescricao {
+        display: none;
+
+    }
+
+    .textoDescricao {
+        font-size: 6vw;
+        max-width: 78vw;
+        width: 600vw;
+
+    }
+
+
+    .tituloDescricao {
+        color: white;
+        font-family: 'Smooch Sans', bold;
+        font-size: 13vw;
+        margin: 0px;
+        width: 50vw;
+    }
+
+
+    .containerSobreMim {
+        width: 30vw;
+        margin-top: 0px;
+
+    }
+
+
+    .divEmail {
+        margin-top: 0vw;
+    }
+
+    .divTituloProjetos {
+        margin: 0vh;
+    }
+
+    .projetos {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .projeto1 {
+        position: relative;
+        top: 10px;
+        transition: 1200ms;
+        margin: 100px;
+        height: 600px;
+        width: 600px;
+        opacity: 0%;
+    }
+
+    .projeto1.surgirProjeto1 {
+        top: 0px;
+        opacity: 100%;
+    }
+
+    .projeto2 {
+        position: relative;
+        top: 10px;
+        transition: 1200ms;
+        margin: 100px;
+        opacity: 0%;
+        height: 600px;
+        width: 600px;
+    }
+
+    .projeto2.surgirProjeto2 {
+        top: 0px;
+        opacity: 100%;
+    }
+
+
+    .imagemProjeto1 {
+        width: 40vw;
+        height: 40vw;
+        object-fit: fill;
+        border-radius: 50%;
+        transition: 500ms;
+        border: 3px solid #5c1156;
+
+    }
+
+    .textoProjeto1 {
+        font-family: 'Smooch Sans', bold;
+        color: white;
+        font-size: 6vw;
+    }
+
+    .textoEmail {
+        font-size: 4vw;
+    }
+
+}
+
+#loadOverlay {
+    opacity: 100%;
+    transition: 450ms;
+}
+
+#loadOverlay.show {
+    opacity: 0%;
+}
