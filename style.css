@@ -3,7 +3,6 @@
 html {
     scroll-behavior: smooth;
     min-height: 100%;
-    position: relative;
 }
 
 body {
@@ -20,9 +19,10 @@ body {
     overflow-x: hidden;
 }
 
-:root {
-    --fundo-height: 100%;
+p, h1, a {
+    font-family: 'Smooch Sans', bold;
 }
+
 
 .title {
     flex-grow: 1;
@@ -34,12 +34,11 @@ body {
     display: flex;
     justify-content: center;
     position: fixed;
-    background-size: 125% 125%;
+    overflow: hidden;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    overflow: hidden;
     z-index: 0;
     background: linear-gradient(45deg, #051962 25%, transparent 25%), linear-gradient(315deg, #051962 25%, transparent 25%), linear-gradient(45deg, transparent 24%, #081b63 25%, #081b63 45%, transparent 45%), linear-gradient(315deg, transparent 24%, #081b63 25%, #081b63 45%, transparent 45%);
     background-size: 6em 6em;
@@ -88,7 +87,6 @@ body {
     align-items: center;
     position: relative;
     justify-content: center;
-    font-family: 'Smooch Sans', bold;
     color: white;
     font-size: 40px;
     margin-left: 35px;
@@ -101,13 +99,8 @@ body {
     position: relative;
 }
 
-p, h1 {
-    font-family: 'Smooch Sans', bold;
-}
-
 a {
     display: flex;
-    font-family: 'Smooch Sans', bold;
     color: white;
     font-size: 4vh;
     text-decoration: none;
@@ -164,7 +157,7 @@ a {
     display: flex;
     position: relative;
     justify-content: center;
-    transform: translateY(0vh);
+    transform: translateY(2vh);
 }
 
 .arrowDiv {
@@ -219,12 +212,9 @@ a {
 
 .tituloDescricao {
     color: white;
-    font-family: 'Smooch Sans', bold;
     font-size: 5vw;
     margin: 0px;
 }
-
-
 
 .containerSobreMim {
     height: 20vw;
@@ -269,7 +259,6 @@ a {
 
 .textoDescricao {
     position: relative;
-    font-family: 'Smooch Sans', bold;
     font-size: 2.2vw;
     max-width: 52vw;
     color: white;
@@ -308,22 +297,9 @@ a {
     align-items: center;
     position: relative;
     justify-content: center;
-    font-family: 'Smooch Sans', bold;
     color: white;
     font-size: 30px;
     margin-right: 35px;
-}
-
-.aEmail {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Smooch Sans', bold;
-    color: white;
-    font-size: max(26px, 3px);
-    text-decoration: none;
-    transition: 500ms;
-    text-align: center;
 }
 
 .projetos {
@@ -335,13 +311,12 @@ a {
     margin-bottom: 5vw;
 }
 
-.projeto1 {
+.projeto {
     position: relative;
     top: 10px;
     transition: 1200ms;
     opacity: 0%;
 }
-
 
 .projeto2 {
     position: relative;
@@ -363,11 +338,11 @@ a {
     transition: 500ms;
 }
 
-.textoProjeto1 {
-    font-family: 'Smooch Sans', bold;
+.textoProjeto {
     color: white;
-    font-size: max(26px, 3px);
+    font-size: 2vw;
     margin: 0px;
+    margin-top: 0.5vw;
 }
 
 .socialMedia {
