@@ -123,38 +123,18 @@ a {
 }
 
 .imagem1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 90vh;
-    object-fit: cover;
-    position: absolute;
-    background-color: transparent;
-    transition: 500ms;
-    margin-bottom: 10px;
-    overflow: hidden;
-    transition: 0ms;
     transform: translateX(0vw);
 }
 
 .imagem2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 90vh;
-    object-fit: cover;
-    position: absolute;
-    background-color: transparent;
-    transition: 500ms;
-    margin-bottom: 10px;
-    overflow: hidden;
-    transition: 3000ms;
     transform: translateX(0vw);
 }   
 
 .imagem3 {
+    transform: translateX(0vw);
+}
+
+.imagens {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,9 +147,7 @@ a {
     margin-bottom: 10px;
     overflow: hidden;
     transition: 3000ms;
-    transform: translateX(0vw);
 }
-
 
 .imagens.move {
     transform: translateX(-100vw);
@@ -497,183 +475,12 @@ a {
     border-radius: 100%;
 }
 
-
-
-
-
-@media (max-width : 700px) {
-    :root {
-        --containner-height: 85vh;
-        --containner-width: 70%;
-        --fotos-heightWidth: 35vw;
-        --text-fontSize: 5.5vw;
+@media (max-width : 667px) {
+    a {
+        font-size: 2vh;
     }
 
-    .aEmail {
-        display: none;
+    .imagens { 
+        height: 90vh;
     }
-
-    .containergeral {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #03081c;
-        height: var(--containner-height);
-        width: var(--containner-width);
-        flex-direction: column;
-        margin-top: 5vw;
-        margin-bottom: 5vw;
-        border-radius: 3vw;
-    }
-
-    .textoCodePen {
-        font-size: var(--text-fontSize);
-    }
-
-    .textoBehance {
-        font-size: var(--text-fontSize);
-    }
-
-
-    .textoLinkedin {
-        font-size: var(--text-fontSize);
-    }
-
-    .nav {
-        height: 18vw;
-        width: 100%;
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .nav.header {
-        height: 12vw;
-    }
-
-    .textoNav {
-
-        font-size: 13vw;
-        margin-left: 0px;
-
-    }
-
-    .tudo {
-        height: 95vh;
-    }
-
-    .container {
-        flex-direction: column;
-        margin: 0px;
-
-    }
-
-    .imagemDescricao {
-        display: none;
-
-    }
-
-    .textoDescricao {
-        font-size: 6vw;
-        max-width: 78vw;
-        width: 600vw;
-
-    }
-
-
-    .tituloDescricao {
-        color: white;
-        font-family: 'Smooch Sans', bold;
-        font-size: 13vw;
-        margin: 0px;
-        width: 50vw;
-    }
-
-
-    .containerSobreMim {
-        width: 30vw;
-        margin-top: 0px;
-
-    }
-
-
-    .divEmail {
-        margin-top: 0vw;
-    }
-
-    .divTituloProjetos {
-        margin: 0vh;
-    }
-
-    .projetos {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .projeto1 {
-        position: relative;
-        top: 10px;
-        transition: 1200ms;
-        margin: 100px;
-        height: 600px;
-        width: 600px;
-        opacity: 0%;
-    }
-
-    .projeto1.surgirProjeto1 {
-        top: 0px;
-        opacity: 100%;
-    }
-
-    .projeto2 {
-        position: relative;
-        top: 10px;
-        transition: 1200ms;
-        margin: 100px;
-        opacity: 0%;
-        height: 600px;
-        width: 600px;
-    }
-
-    .projeto2.surgirProjeto2 {
-        top: 0px;
-        opacity: 100%;
-    }
-
-
-    .imagemProjeto1 {
-        width: 40vw;
-        height: 40vw;
-        object-fit: fill;
-        border-radius: 50%;
-        transition: 500ms;
-        border: 3px solid #5c1156;
-
-    }
-
-    .textoProjeto1 {
-        font-family: 'Smooch Sans', bold;
-        color: white;
-        font-size: 6vw;
-    }
-
-    .textoEmail {
-        font-size: 4vw;
-    }
-
-}
-
-#loadOverlay {
-    opacity: 100%;
-    transition: 450ms;
-}
-
-#loadOverlay.show {
-    opacity: 0%;
 }
