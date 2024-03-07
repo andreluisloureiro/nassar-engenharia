@@ -23,7 +23,6 @@ p, h1, a {
     font-family: 'Smooch Sans', bold;
 }
 
-
 .title {
     flex-grow: 1;
     display: flex;
@@ -311,7 +310,7 @@ a {
     margin-bottom: 5vw;
 }
 
-.projeto {
+.projeto1 {
     position: relative;
     top: 10px;
     transition: 1200ms;
